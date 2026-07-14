@@ -11,7 +11,7 @@
             <a class="cta" routerLink="/reservation">Tisch reservieren</a>
             <a class="text-link" href="#speisen">Unsere Speisekarte</a>
         </div>
-        <img class="hero-illustration" ngSrc="/assets/images/kiebitz_main.svg" width="321" height="362" priority
+        <img class="hero-illustration" ngSrc="assets/images/kiebitz_main.svg" width="321" height="362" priority
             alt="Illustrierte Kaffeetasse des Cafe Kiebitz" />
     </header>
 
@@ -26,12 +26,12 @@
             zum Ankommen und Durchatmen.
         </p>
         <figure class="owner">
-            <img ngSrc="/assets/images/owner.png" width="165" height="127"
+            <img ngSrc="assets/images/owner.png" width="165" height="127"
                 alt="Maren Kespe, Inhaberin des Café Kiebitz" />
             <p class="owner-role">Inhaberin</p>
             <figcaption>Maren Kespe</figcaption>
         </figure>
-        <img class="about-photo" ngSrc="/assets/images/BIERRRR.png" width="390" height="343"
+        <img class="about-photo" ngSrc="assets/images/BIERRRR.png" width="390" height="343"
             alt="Gemütliche Atmosphäre im Café Kiebitz" />
     </section>
 
@@ -41,7 +41,7 @@
             Mit frischen Zutaten und viel Liebe zubereitet — unsere Auswahl reicht von aromatischem
             Kaffee über hausgemachte Speisen bis zu süßen Leckereien.
         </p>
-        <img class="buffet-photo" ngSrc="/assets/images/buffet.png" width="360" height="402"
+        <img class="buffet-photo" ngSrc="assets/images/buffet.png" width="360" height="402"
             alt="Brunchbuffet mit Broten, Obst und Kaffee" />
     </section>
 
@@ -62,30 +62,30 @@
     </section>
 
     <section class="menu card" aria-label="Speisekarte">
-        <app-menu-category [icon]="'/assets/images/salat_category.svg'" [iconWidth]="63" [iconHeight]="67"
+        <app-menu-category [icon]="'assets/images/salat_category.svg'" [iconWidth]="63" [iconHeight]="67"
             title="Salate" [items]="salate" />
-        <app-menu-category [icon]="'/assets/images/warm_small_dishes_category.svg'" [iconWidth]="70" [iconHeight]="87"
+        <app-menu-category [icon]="'assets/images/warm_small_dishes_category.svg'" [iconWidth]="70" [iconHeight]="87"
             title="Warme Kleingerichte" [items]="warmeKleingerichte" />
-        <app-menu-category [icon]="'/assets/images/cake_category.svg'" [iconWidth]="68" [iconHeight]="52" title="Kuchen"
+        <app-menu-category [icon]="'assets/images/cake_category.svg'" [iconWidth]="68" [iconHeight]="52" title="Kuchen"
             description="Unsere tagesaktuelle Auswahl an Kuchen und Torte finden Sie an unserer Kuchentheke."
             [items]="kuchen" />
 
-        <img class="divider" ngSrc="/assets/images/horizontal_divider.svg" width="222" height="41" alt="" />
+        <img class="divider" ngSrc="assets/images/horizontal_divider.svg" width="222" height="41" alt="" />
         <h2 class="drinks-heading">Getränkekarte</h2>
         <p class="drinks-intro">Ob mit oder ohne Alkohol, warm oder kalt: Bei uns ist für jeden etwas dabei.</p>
 
-        <app-menu-category [icon]="'/assets/images/hot_drinks_category.svg'" [iconWidth]="60" [iconHeight]="83"
+        <app-menu-category [icon]="'assets/images/hot_drinks_category.svg'" [iconWidth]="60" [iconHeight]="83"
             title="Heißgetränke" [items]="heissgetraenke" />
-        <app-menu-category [icon]="'/assets/images/lame_drinks_category.svg'" [iconWidth]="45" [iconHeight]="77"
+        <app-menu-category [icon]="'assets/images/lame_drinks_category.svg'" [iconWidth]="45" [iconHeight]="77"
             title="Alkoholfreie Getränke" [items]="alkoholfreieGetraenke" />
-        <app-menu-category [icon]="'/assets/images/wine_category.svg'" [iconWidth]="52" [iconHeight]="71" title="Weine"
+        <app-menu-category [icon]="'assets/images/wine_category.svg'" [iconWidth]="52" [iconHeight]="71" title="Weine"
             [items]="weine" />
-        <app-menu-category [icon]="'/assets/images/bier_category.svg'" [iconWidth]="54" [iconHeight]="68" title="Biere"
+        <app-menu-category [icon]="'assets/images/bier_category.svg'" [iconWidth]="54" [iconHeight]="68" title="Biere"
             [items]="biere" />
     </section>
 
     <section class="milk-options card">
-        <img class="section-icon" ngSrc="/assets/images/milk_options_category.svg" width="109" height="122" alt="" />
+        <img class="section-icon" ngSrc="assets/images/milk_options_category.svg" width="109" height="122" alt="" />
         <div class="milk options-copy">
             <h3 class="milk-options_title">Milch & Optionen</h3>
             <p class="milk-options_text">Alle milchhaltigen Getränke bereiten wir Ihnen auch mit Hafermilch oder
@@ -95,7 +95,7 @@
     </section>
 
     <section class="region card">
-        <img class="section-icon" ngSrc="/assets/images/regional_category.svg" width="189" height="119" alt="" />
+        <img class="section-icon" ngSrc="assets/images/regional_category.svg" width="189" height="119" alt="" />
         <div class="region-copy">
             <h3 class="region_title">Aus der Region</h3>
             <p class="region_text">Viele unserer Zutaten beziehen wir lokal:</p>
@@ -109,19 +109,19 @@
     </section>
 
     <section class="allergy card">
-        <img class="section-icon" ngSrc="/assets/images/allergies_category.svg" width="109" height="126" alt="" />
+        <img class="section-icon" ngSrc="assets/images/allergies_category.svg" width="109" height="126" alt="" />
         <div class="allergy-copy">
             <h3 class="allergy_title">Allergene</h3>
             <p class="allergy_text">
                 Bei Fragen zu Inhaltsstoffen und Allergenen stehen wir gerne zur Verfügung.
             </p>
         </div>
-        <img class="allergy-photo" ngSrc="/assets/images/group_drinking_coffee.png" width="390" height="343"
+        <img class="allergy-photo" ngSrc="assets/images/group_drinking_coffee.png" width="390" height="343"
             alt="Gäste im Café mit Kaffee in der Hand" />
     </section>
 
     <section class="location card">
-        <!-- <img class="section-icon" ngSrc="/assets/images/map_marker.svg" width="51" height="84" alt="" /> -->
+        <!-- <img class="section-icon" ngSrc="assets/images/map_marker.svg" width="51" height="84" alt="" /> -->
         <div class="location-copy">
             <h3>Unsere Lage</h3>
             <p>Nizzaallee 30, 52072 Aachen</p>
@@ -142,17 +142,17 @@
 
         <ul class="contact-rows">
             <li>
-                <img ngSrc="/assets/images/email.svg" width="28" height="19" alt="" />
+                <img ngSrc="assets/images/email.svg" width="28" height="19" alt="" />
                 <a href="mailto:info@cafe-kiebitz.de">Email: info@cafe-kiebitz.de</a>
             </li>
             <li>
-                <img ngSrc="/assets/images/phone.svg" width="22" height="25" alt="" />
+                <img ngSrc="assets/images/phone.svg" width="22" height="25" alt="" />
                 <a href="tel:+4902411234567890">Telefon: +49 0241 12 3456789</a>
             </li>
         </ul>
 
         <a class="cta reserve" routerLink="/reservation">
-            <img ngSrc="/assets/images/calender.svg" width="35" height="35" alt="" />
+            <img ngSrc="assets/images/calender.svg" width="35" height="35" alt="" />
             <span>Tisch reservieren</span>
         </a>
 
@@ -166,10 +166,10 @@
         <p class="social-label">Folgen Sie uns:</p>
         <div class="social">
             <a href="https://instagram.com" aria-label="Café Kiebitz auf Instagram">
-                <img ngSrc="/assets/images/insta.svg" width="39" height="39" alt="" />
+                <img ngSrc="assets/images/insta.svg" width="39" height="39" alt="" />
             </a>
             <a href="https://facebook.com" aria-label="Café Kiebitz auf Facebook">
-                <img ngSrc="/assets/images/facebook.svg" width="38" height="38" alt="" />
+                <img ngSrc="assets/images/facebook.svg" width="38" height="38" alt="" />
             </a>
         </div>
 
@@ -178,7 +178,7 @@
             <a href="#datenschutz">Datenschutz</a>
         </nav>
 
-        <img class="footer-logo" ngSrc="/assets/images/logo-kiebitz.svg" width="204" height="97"
+        <img class="footer-logo" ngSrc="assets/images/logo-kiebitz.svg" width="204" height="97"
             alt="Café Kiebitz Logo" />
     </section>
 </article>

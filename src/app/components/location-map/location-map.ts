@@ -36,7 +36,7 @@ export class LocationMap {
       }).addTo(leafletMap);
 
       const markerIcon = icon({
-        iconUrl: '/assets/images/map_marker.svg',
+        iconUrl: 'assets/images/map_marker.svg',
         iconSize: [51, 84],
         iconAnchor: [25, 84],
         popupAnchor: [0, -84],
