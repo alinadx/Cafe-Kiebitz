@@ -1,0 +1,28 @@
+<div class="category-head">
+    <img class="category-icon" [ngSrc]="icon()" [width]="iconWidth()" [height]="iconHeight()" alt="" />
+    <h3>{{ title() }}</h3>
+</div>
+
+@if (description(); as desc) {
+<p class="category-description">{{ desc }}</p>
+}
+
+<div class="menu-grid">
+    @for (item of items(); track item.name) {
+    <div>
+        <p class="menu-row">
+            <span class="item-name">{{ item.name }}</span>
+            @if (item.volume) {
+            <span class="item-volume">{{ item.volume }}</span>
+            }
+            @if (item.price) {
+            <span class="item-price">{{ item.price }}</span>
+            }
+        </p>
+        @if (item.note) {
+        <p class="item-note">{{ item.note }}</p>
+        }
+    </div>
+
+    }
+</div>

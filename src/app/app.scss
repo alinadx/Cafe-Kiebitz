@@ -1,0 +1,28 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar-logo {
+  width: auto;
+  height: 2.2rem;
+  margin-right: 0.6rem;
+  object-fit: contain;
+}
+
+mat-toolbar.mat-primary {
+  --mat-toolbar-container-background-color: var(--mat-sys-primary);
+  --mat-toolbar-container-text-color: var(--mat-sys-on-primary);
+}
+
+.app-shell {
+  height: 100dvh;
+}
+
+mat-sidenav {
+  min-width: 260px;
+  padding: 0.75rem;
+}
+
+.page-content {
+  padding: 1.25rem;
+}

@@ -1,0 +1,31 @@
+<mat-sidenav-container class="app-shell" autosize>
+  <mat-sidenav #sidenav mode="push" [opened]="false">
+    <app-sidenav (linkClicked)="sidenav.close()" />
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        mat-icon-button
+        type="button"
+        aria-label="Toggle sidenav"
+        (click)="sidenav.toggle()"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <img
+        class="toolbar-logo"
+        ngSrc="/assets/images/logo-kiebitz.svg"
+        width="204"
+        height="97"
+        alt="Cafe Kiebitz Logo"
+      />
+      <span>Cafe Kiebitz</span>
+      <span class="example-spacer"></span>
+    </mat-toolbar>
+
+    <main class="page-content">
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>

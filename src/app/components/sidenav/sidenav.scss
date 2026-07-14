@@ -1,0 +1,8 @@
+:host {
+  display: block;
+}
+
+.active-link {
+  --mat-list-list-item-label-text-color: var(--mat-sys-primary);
+  font-weight: 600;
+}

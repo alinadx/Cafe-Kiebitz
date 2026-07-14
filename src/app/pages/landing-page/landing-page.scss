@@ -1,0 +1,590 @@
+:host {
+	// Original brand colors from the PDF design, kept verbatim so text and
+	// headings render exactly as in the mock. The generated Material palette
+	// (src/styles/_theme-colors.scss) themes the Material UI components.
+	--paper: #f5f1e8;
+	--ink: #1D1D1B;
+	--accent: #263524; // deep forest green from the mock (headings + CTA)
+	--earth: #b27641;
+	--card: #fffdf8;
+	--muted: #1D1D1B;
+
+	display: block;
+	background:
+		radial-gradient(circle at 15% 10%, #e7dcc9 0, transparent 34%),
+		radial-gradient(circle at 85% 25%, #ead8c2 0, transparent 31%),
+		var(--paper);
+}
+
+.landing-page {
+	display: grid;
+	gap: 1rem;
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 1rem 0.75rem 3rem;
+}
+
+.card {
+	background: var(--card);
+	border: 1px solid #dfd3c0;
+	border-radius: 1rem;
+	overflow: hidden;
+	box-shadow: 0 0.75rem 1.75rem rgb(76 53 35 / 10%);
+	animation: reveal 700ms ease both;
+}
+
+/* Typography */
+
+.eyebrow {
+	margin: 0 0 0.25rem;
+	font: 700 0.72rem/1.2 'Montserrat', sans-serif;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--earth);
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+	font-family: 'Great Vibes', cursive;
+	font-weight: 400;
+	color: var(--accent); // mock headings are forest green, not ink
+}
+
+h1 {
+	font-size: clamp(2rem, 8vw, 3.4rem);
+	line-height: 0.95;
+}
+
+h2 {
+	font-size: clamp(1.8rem, 6vw, 2.7rem);
+	line-height: 1;
+}
+
+h3 {
+	font-size: clamp(1.5rem, 5vw, 2.2rem);
+}
+
+p,
+li,
+a {
+	font-family: 'Montserrat', 'Segoe UI', sans-serif;
+	color: var(--ink);
+}
+
+/* Hero */
+
+.hero {
+	display: grid;
+	gap: 1rem;
+}
+
+.hero-copy {
+	padding: 1.25rem;
+}
+
+.hero-copy p {
+	line-height: 1.55;
+}
+
+.subtitle {
+	margin-top: 0.5rem;
+	font-weight: 600;
+}
+
+.hero-illustration {
+	width: min(100%, 320px);
+	height: auto;
+	margin: 0 auto 1.25rem;
+	display: block;
+}
+
+.cta {
+	display: inline-block;
+	margin-top: 0.75rem;
+	padding: 0.7rem 1rem;
+	border-radius: 999px;
+	background: var(--accent);
+	color: var(--mat-sys-on-primary);
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.cta:focus-visible {
+	outline: 3px solid var(--ink);
+	outline-offset: 2px;
+}
+
+.text-link {
+	display: inline-block;
+	margin: 0.75rem 0 0 1rem;
+	color: var(--accent);
+	font-weight: 600;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+/* Generic section spacing */
+
+.about,
+.menu-intro,
+.menu,
+.region,
+.allergy,
+.location,
+.hours,
+.contact {
+	padding: 1.25rem;
+}
+
+.about p,
+.menu-intro p,
+.region-copy p,
+.allergy-copy p,
+.location-copy p,
+.hours p {
+	color: var(--muted);
+	line-height: 1.6;
+}
+
+/* About */
+
+.about {
+	display: grid;
+	gap: 1rem;
+}
+
+.owner {
+	margin: 0;
+	display: grid;
+	justify-items: center;
+	gap: 0.4rem;
+}
+
+.owner img {
+	width: 165px;
+	max-width: 60%;
+	height: auto;
+	border-radius: 999px;
+	object-fit: cover;
+}
+
+.owner-role {
+	margin: 0;
+	font: 700 0.72rem/1.2 'Montserrat', sans-serif;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--earth);
+}
+
+.owner figcaption {
+	// mock uses Montserrat here (26px), not the Great Vibes script
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	color: var(--ink);
+}
+
+.about-photo,
+.buffet-photo,
+.allergy-photo {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 0.9rem;
+}
+
+/* Brunch highlight */
+
+.brunch {
+	padding: 1.25rem;
+	background: linear-gradient(140deg, var(--mat-sys-secondary), var(--mat-sys-tertiary));
+}
+
+.brunch h3,
+.brunch p,
+.brunch li {
+	color: var(--mat-sys-on-secondary);
+}
+
+.brunch h3 {
+	// mock renders this as a bold uppercase Montserrat banner, not script
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	font-size: clamp(1.4rem, 5vw, 1.875rem); // ~30px in the mock
+}
+
+.brunch-schedule {
+	margin: 0 0 0.5rem;
+	font: 600 0.85rem/1.2 'Montserrat', sans-serif;
+	letter-spacing: 0.04em;
+}
+
+.brunch-with {
+	margin: 0.9rem 0 0;
+	font-weight: 700;
+}
+
+.brunch ul {
+	margin: 0.75rem 0 0;
+	padding-left: 1.15rem;
+	display: grid;
+	gap: 0.3rem;
+}
+
+/* Menu */
+
+.menu {
+	display: grid;
+	gap: 1.5rem;
+}
+
+.divider {
+	width: min(100%, 222px);
+	height: auto;
+	margin: 0.5rem auto 0;
+	display: block;
+}
+
+.drinks-heading {
+	text-align: center;
+	// mock: 20px uppercase Montserrat label, not the Great Vibes section title
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	font-size: 1.25rem;
+	color: var(--ink);
+}
+
+.drinks-intro {
+	margin: 0;
+	text-align: center;
+	color: var(--muted);
+	line-height: 1.6;
+}
+
+/* Icon + copy sections */
+
+.milk-options {
+	width: 100%;
+	max-width: 582px;
+	margin: 0 auto;
+	padding: 72px 24px 80px;
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	background: #fff;
+}
+
+.milk-options_icon,
+.region_icon,
+.allergy_icon {
+	display: block;
+	width: 109px;
+	height: auto;
+	margin-bottom: 64px;
+}
+
+.milk-options_title,
+.region_title,
+.allergy_title {
+	margin: 0 0 40px;
+
+	font-family: Montserrat, sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.2;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+
+	color: 1D1D1B;
+}
+
+.milk-options_text,
+.region_text,
+.allergy_text {
+	max-width: 520px;
+	margin: 0 0 28px;
+
+	font-family: Montserrat, sans-serif;
+	font-size: 17px;
+	line-height: 1.55;
+	letter-spacing: 0.03em;
+
+	color: #1D1D1B;
+}
+
+.region-list {
+	max-width: 520px;
+	margin: 0 0 28px;
+
+	font-family: Montserrat, sans-serif;
+	font-size: 17px;
+	line-height: 1.55;
+	letter-spacing: 0.03em;
+
+	color: #1D1D1B;
+}
+
+// .region,
+// .allergy,
+// .location {
+// 	display: grid;
+// 	grid-template-columns: auto 1fr;
+// 	align-items: center;
+// 	gap: 1rem;
+// }
+
+.allergy-photo,
+.location-map {
+	grid-column: 1 / -1;
+}
+
+.location-map {
+	display: block;
+}
+
+.region-list {
+	margin: 0.5rem 0 0;
+	padding-left: 1.15rem;
+	display: grid;
+	gap: 0.3rem;
+	color: var(--muted);
+	line-height: 1.5;
+}
+
+.section-icon {
+	width: auto;
+	height: 3.5rem;
+	object-fit: contain;
+}
+
+/* Hours */
+
+.hours {
+	display: grid;
+	gap: 0.3rem;
+}
+
+/* Contact / footer */
+
+.contact {
+	display: grid;
+	gap: 1rem;
+	justify-items: center;
+	text-align: center;
+}
+
+.contact-rows {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 0.6rem;
+	justify-items: center;
+}
+
+.contact-rows li {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+}
+
+.contact-rows img {
+	width: auto;
+	height: 1.4rem;
+}
+
+.contact-rows a {
+	color: var(--ink);
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.contact-rows a:hover,
+.contact-rows a:focus-visible {
+	text-decoration: underline;
+}
+
+.footer-nav,
+.legal-nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.5rem 1.25rem;
+}
+
+.footer-nav a,
+.legal-nav a {
+	color: var(--ink);
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus-visible,
+.legal-nav a:hover,
+.legal-nav a:focus-visible {
+	text-decoration: underline;
+}
+
+.legal-nav a {
+	color: var(--muted);
+	font-weight: 400;
+	font-size: 0.85rem;
+}
+
+.social-label {
+	margin: 0;
+	font: 700 0.72rem/1.2 'Montserrat', sans-serif;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--earth);
+}
+
+.social {
+	display: flex;
+	gap: 1rem;
+}
+
+.social a {
+	display: inline-flex;
+	padding: 0.4rem;
+	border-radius: 999px;
+}
+
+.social a:focus-visible {
+	outline: 3px solid var(--accent);
+	outline-offset: 2px;
+}
+
+.social img {
+	width: 2.4rem;
+	height: 2.4rem;
+}
+
+.reserve {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.reserve img {
+	width: 1.3rem;
+	height: 1.3rem;
+}
+
+.footer-logo {
+	width: min(100%, 204px);
+	height: auto;
+	margin-top: 0.5rem;
+}
+
+/* Reveal animation stagger */
+
+.landing-page>section:nth-of-type(1) {
+	animation-delay: 80ms;
+}
+
+.landing-page>section:nth-of-type(2) {
+	animation-delay: 130ms;
+}
+
+.landing-page>section:nth-of-type(3) {
+	animation-delay: 180ms;
+}
+
+.landing-page>section:nth-of-type(4) {
+	animation-delay: 220ms;
+}
+
+.landing-page>section:nth-of-type(5) {
+	animation-delay: 260ms;
+}
+
+.landing-page>section:nth-of-type(6) {
+	animation-delay: 300ms;
+}
+
+.landing-page>section:nth-of-type(7) {
+	animation-delay: 340ms;
+}
+
+@media (min-width: 780px) {
+	.landing-page {
+		grid-template-columns: repeat(12, 1fr);
+		gap: 1.1rem;
+		padding: 1.25rem;
+	}
+
+	.hero {
+		grid-column: span 12;
+		grid-template-columns: 1.2fr 1fr;
+		align-items: center;
+	}
+
+	.hero-illustration {
+		margin: 1.25rem;
+	}
+
+	.about {
+		grid-column: span 6;
+	}
+
+	.menu-intro {
+		grid-column: span 6;
+	}
+
+	.brunch {
+		grid-column: span 12;
+	}
+
+	.menu {
+		grid-column: span 12;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 2.5rem;
+	}
+
+	.menu .divider,
+	.menu .drinks-heading,
+	.menu .drinks-intro {
+		grid-column: 1 / -1;
+	}
+
+	.region,
+	.allergy {
+		grid-column: span 6;
+	}
+
+	.allergy {
+		align-content: start;
+	}
+
+	.location,
+	.hours {
+		grid-column: span 6;
+	}
+
+	.contact {
+		grid-column: span 12;
+	}
+}
+
+@keyframes reveal {
+	from {
+		transform: translateY(14px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
