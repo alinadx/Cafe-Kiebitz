@@ -9,16 +9,12 @@
 
 html {
   height: 100%;
-  @include mat.theme(
-    (
-      color: (
-        primary: theme.$primary-palette,
+  @include mat.theme((color: (primary: theme.$primary-palette,
         tertiary: theme.$tertiary-palette,
       ),
       typography: Montserrat,
       density: 0,
-    )
-  );
+    ));
 }
 
 body {
@@ -39,4 +35,5 @@ body {
   height: 100%;
   font-family: 'Montserrat', 'Segoe UI', sans-serif;
 }
+
 /* You can add global styles to this file, and also import other style files */

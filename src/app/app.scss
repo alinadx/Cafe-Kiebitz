@@ -1,6 +1,4 @@
-.example-spacer {
-  flex: 1 1 auto;
-}
+
 
 .toolbar-logo {
   width: auto;
@@ -10,19 +8,21 @@
 }
 
 mat-toolbar.mat-primary {
-  --mat-toolbar-container-background-color: var(--mat-sys-primary);
-  --mat-toolbar-container-text-color: var(--mat-sys-on-primary);
+  background-color: var(--card);
+  color: var(--accent);
 }
 
 .app-shell {
   height: 100dvh;
+  background-color: var(--paper);
 }
 
 mat-sidenav {
   min-width: 260px;
   padding: 0.75rem;
+  color: var(--paper);
 }
 
 .page-content {
-  padding: 1.25rem;
+  color: var(--paper);
 }

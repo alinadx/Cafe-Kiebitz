@@ -1,7 +1,6 @@
 <article class="landing-page">
-    <header class="hero card">
-        <div class="hero-copy">
-            <p class="eyebrow">Café Kiebitz</p>
+    <section class="hero">
+        <div class="hero">
             <h1>Zur Ruhe kommen</h1>
             <p class="subtitle">Kaffee, hausgemachte Speisen und Natur in ihrer schönsten Form.</p>
             <p>
@@ -13,9 +12,9 @@
         </div>
         <img class="hero-illustration" ngSrc="assets/images/kiebitz_main.svg" width="321" height="362" priority
             alt="Illustrierte Kaffeetasse des Cafe Kiebitz" />
-    </header>
+    </section>
 
-    <section class="about card" id="ueber-uns">
+    <section class="about" id="ueber-uns">
         <h2>Über uns</h2>
         <p>
             Das Café Kiebitz ist aus dem Wunsch entstanden, einen Ort der Ruhe zu schaffen — fern vom Trubel der
@@ -31,6 +30,10 @@
             <p class="owner-role">Inhaberin</p>
             <figcaption>Maren Kespe</figcaption>
         </figure>
+
+    </section>
+
+    <section class="about-photo">
         <img class="about-photo" ngSrc="assets/images/BIERRRR.png" width="390" height="343"
             alt="Gemütliche Atmosphäre im Café Kiebitz" />
     </section>
@@ -62,8 +65,8 @@
     </section>
 
     <section class="menu card" aria-label="Speisekarte">
-        <app-menu-category [icon]="'assets/images/salat_category.svg'" [iconWidth]="63" [iconHeight]="67"
-            title="Salate" [items]="salate" />
+        <app-menu-category [icon]="'assets/images/salat_category.svg'" [iconWidth]="63" [iconHeight]="67" title="Salate"
+            [items]="salate" />
         <app-menu-category [icon]="'assets/images/warm_small_dishes_category.svg'" [iconWidth]="70" [iconHeight]="87"
             title="Warme Kleingerichte" [items]="warmeKleingerichte" />
         <app-menu-category [icon]="'assets/images/cake_category.svg'" [iconWidth]="68" [iconHeight]="52" title="Kuchen"
@@ -84,9 +87,9 @@
             [items]="biere" />
     </section>
 
-    <section class="milk-options card">
+    <section class="milk-options">
         <img class="section-icon" ngSrc="assets/images/milk_options_category.svg" width="109" height="122" alt="" />
-        <div class="milk options-copy">
+        <div class="milk-options">
             <h3 class="milk-options_title">Milch & Optionen</h3>
             <p class="milk-options_text">Alle milchhaltigen Getränke bereiten wir Ihnen auch mit Hafermilch oder
                 laktosefreier Milch zu.</p>
@@ -94,9 +97,9 @@
         </div>
     </section>
 
-    <section class="region card">
+    <section class="region">
         <img class="section-icon" ngSrc="assets/images/regional_category.svg" width="189" height="119" alt="" />
-        <div class="region-copy">
+        <div class="region">
             <h3 class="region_title">Aus der Region</h3>
             <p class="region_text">Viele unserer Zutaten beziehen wir lokal:</p>
             <ul class="region-list">
@@ -108,14 +111,17 @@
         </div>
     </section>
 
-    <section class="allergy card">
+    <section class="allergy">
         <img class="section-icon" ngSrc="assets/images/allergies_category.svg" width="109" height="126" alt="" />
-        <div class="allergy-copy">
+        <div class="allergy">
             <h3 class="allergy_title">Allergene</h3>
             <p class="allergy_text">
                 Bei Fragen zu Inhaltsstoffen und Allergenen stehen wir gerne zur Verfügung.
             </p>
         </div>
+    </section>
+
+    <section class="allergy-photo">
         <img class="allergy-photo" ngSrc="assets/images/group_drinking_coffee.png" width="390" height="343"
             alt="Gäste im Café mit Kaffee in der Hand" />
     </section>
@@ -129,7 +135,7 @@
         <app-location-map class="location-map" />
     </section>
 
-    <section class="hours card">
+    <section class="hours">
         <h3>Öffnungszeiten</h3>
         <p>Montag bis Freitag</p>
         <p>12:00 – 18:00 Uhr</p>

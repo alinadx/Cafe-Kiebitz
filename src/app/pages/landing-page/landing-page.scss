@@ -2,18 +2,17 @@
 	// Original brand colors from the PDF design, kept verbatim so text and
 	// headings render exactly as in the mock. The generated Material palette
 	// (src/styles/_theme-colors.scss) themes the Material UI components.
-	--paper: #f5f1e8;
 	--ink: #1D1D1B;
 	--accent: #263524; // deep forest green from the mock (headings + CTA)
 	--earth: #b27641;
-	--card: #fffdf8;
+	--card: #EFE9E4;
 	--muted: #1D1D1B;
 
 	display: block;
 	background:
 		radial-gradient(circle at 15% 10%, #e7dcc9 0, transparent 34%),
 		radial-gradient(circle at 85% 25%, #ead8c2 0, transparent 31%),
-		var(--paper);
+		var(#fff);
 }
 
 .landing-page {
@@ -90,7 +89,6 @@ a {
 
 .subtitle {
 	margin-top: 0.5rem;
-	font-weight: 600;
 }
 
 .hero-illustration {
@@ -108,7 +106,6 @@ a {
 	background: var(--accent);
 	color: var(--mat-sys-on-primary);
 	text-decoration: none;
-	font-weight: 700;
 }
 
 .cta:focus-visible {
@@ -120,8 +117,6 @@ a {
 	display: inline-block;
 	margin: 0.75rem 0 0 1rem;
 	color: var(--accent);
-	font-weight: 600;
-	text-decoration: underline;
 	text-underline-offset: 3px;
 }
 
@@ -144,7 +139,7 @@ a {
 .allergy-copy p,
 .location-copy p,
 .hours p {
-	color: var(--muted);
+	color: var(--ink);
 	line-height: 1.6;
 }
 
@@ -166,7 +161,7 @@ a {
 	width: 165px;
 	max-width: 60%;
 	height: auto;
-	border-radius: 999px;
+	border-radius: 17px;
 	object-fit: cover;
 }
 
@@ -263,13 +258,15 @@ a {
 .drinks-intro {
 	margin: 0;
 	text-align: center;
-	color: var(--muted);
+	color: var(--ink);
 	line-height: 1.6;
 }
 
 /* Icon + copy sections */
 
-.milk-options {
+.milk-options,
+.region,
+.allergy {
 	width: 100%;
 	max-width: 582px;
 	margin: 0 auto;
@@ -304,7 +301,7 @@ a {
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 
-	color: 1D1D1B;
+	color: #1D1D1B;
 }
 
 .milk-options_text,
@@ -333,14 +330,6 @@ a {
 	color: #1D1D1B;
 }
 
-// .region,
-// .allergy,
-// .location {
-// 	display: grid;
-// 	grid-template-columns: auto 1fr;
-// 	align-items: center;
-// 	gap: 1rem;
-// }
 
 .allergy-photo,
 .location-map {
@@ -356,7 +345,7 @@ a {
 	padding-left: 1.15rem;
 	display: grid;
 	gap: 0.3rem;
-	color: var(--muted);
+	color: var(--ink);
 	line-height: 1.5;
 }
 

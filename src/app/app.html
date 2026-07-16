@@ -5,23 +5,11 @@
 
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <button
-        mat-icon-button
-        type="button"
-        aria-label="Toggle sidenav"
-        (click)="sidenav.toggle()"
-      >
+      <img class="toolbar-logo" ngSrc="assets/images/logo-kiebitz.svg" width="204" height="97"
+        alt="Cafe Kiebitz Logo" />
+      <button mat-icon-button type="button" aria-label="Toggle sidenav" (click)="sidenav.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
-      <img
-        class="toolbar-logo"
-        ngSrc="assets/images/logo-kiebitz.svg"
-        width="204"
-        height="97"
-        alt="Cafe Kiebitz Logo"
-      />
-      <span>Cafe Kiebitz</span>
-      <span class="example-spacer"></span>
     </mat-toolbar>
 
     <main class="page-content">
